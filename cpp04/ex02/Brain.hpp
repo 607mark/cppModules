@@ -10,7 +10,6 @@ class Brain {
         unsigned int ideasCount;
     public:
         Brain();
-        Brain(std::string);
         Brain(const Brain& other);
         Brain& operator=(const Brain& other);
         ~Brain();

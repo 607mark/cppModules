@@ -10,7 +10,7 @@ class WrongAnimal {
         WrongAnimal(std::string);
         WrongAnimal(const WrongAnimal& other);
         WrongAnimal& operator=(const WrongAnimal& other);
-        virtual ~WrongAnimal(); // destructor has to be virtual since WrongAnimal is abstract class and WrongAnimal ptr can hold derived class object(polymorphism) and needs virtual for proper cleanup
+        ~WrongAnimal();
 
         std::string getType(void) const;
         void makeSound(void) const;
