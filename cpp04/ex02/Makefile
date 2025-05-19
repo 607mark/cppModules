@@ -1,8 +1,11 @@
 NAME := animal
 RM := rm -rf
 
-CC := c++
-FLAGS := -Wall -Werror -Wextra -std=c++20
+# CC := c++
+# FLAGS := -Wall -Werror -Wextra -std=c++20
+
+CC := clang++
+FLAGS := -Wall -Werror -Wextra -Winconsistent-missing-override -std=c++20
 
 SRC := Animal.cpp \
 		Cat.cpp \

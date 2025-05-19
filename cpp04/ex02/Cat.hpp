@@ -14,6 +14,6 @@ class Cat : public Animal {
         ~Cat();
 
         void makeSound(void) const override ;
-        void addBrainIdea(std::string idea);
-        std::string getBrainIdea(unsigned int index) const;     
+        void addBrainIdea(std::string idea) override;
+        std::string getBrainIdea(unsigned int index) const override;     
 } ;

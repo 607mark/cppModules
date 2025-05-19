@@ -32,3 +32,11 @@ std::string Animal::getType(void) const {
 void Animal::makeSound(void) const {
     std::cout << "Bloop-zorp-wibbidy-wop!👽👽👽" << std::endl;
 }
+
+void Animal::addBrainIdea(std::string idea) {
+    std::cout << "I'm an Animal, I have no Brain to store the idea: " << idea << std::endl;
+}
+std::string Animal::getBrainIdea(unsigned int index) const {
+    std::cout << "I'm an Animal, I have no Brain, I cannot get idea #" << index << std::endl;
+    return "";
+}

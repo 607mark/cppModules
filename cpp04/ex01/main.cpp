@@ -39,6 +39,14 @@ void OCCF_tests(void) {
         delete Lucy;
         std::cout << "          " << Daisy.getBrainIdea(0) << " " << std::endl;
     }
+
+        {
+        Animal *Lucy  = new Animal;
+        Lucy->addBrainIdea("Dry cat food doesn't taste too good");
+        Animal Daisy(*Lucy);
+        delete Lucy;
+        std::cout << "          " << Daisy.getBrainIdea(0) << " " << std::endl;
+    }
 }
 
 void subject_array_exercise(void ) {
