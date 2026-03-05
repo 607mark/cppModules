@@ -1,0 +1,15 @@
+# Ignore object files
+*.o
+
+# Ignore common compiled binaries
+a.out
+*.exe
+easyfind
+
+# Build folders
+/build/
+/bin/
+
+# Editor temporary files
+*~
+*.swp
